@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wmBolles</title>
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/cursor.css">
+</head>
+<script src="./assets/script.js"></script>
+<script src="/assets/vanilla.js"></script>
+
+<body>
+
+<div class="firefly"></div>
+<div class="firefly"></div>
+<div class="firefly"></div>
+<div class="firefly"></div>
+<div class="firefly"></div>
+<div class="firefly"></div>
+<div class="firefly"></div>
+<div class="firefly"></div>
+<div class="firefly"></div>
+<div class="firefly"></div>
+<div class="firefly"></div>
+<div class="firefly"></div>
+<div class="firefly"></div>
+<div class="firefly"></div>
+<div class="firefly"></div>
+
+  <div class="card">
+    <p><strong>Undergoing Scheduled Maintenance.
+      We'll be back soon!</strong><br><br>thanks...</p>
+      <p class="card-footer">Created by <a href="https://github.com/wmBolles"  style="text-decoration: none;">wmBolles</a></p>
+  </div>
+    <input id="page-nav-toggle" class="main-navigation-toggle" type="checkbox" />
+<label for="page-nav-toggle">
+  <svg class="icon--menu-toggle" viewBox="0 0 60 30">
+    <g class="icon-group">
+      <g class="icon--menu">
+        <path d="M 6 0 L 54 0" />
+        <path d="M 6 15 L 54 15" />
+        <path d="M 6 30 L 54 30" />
+      </g>
+      <g class="icon--close">
+        <path d="M 15 0 L 45 30" />
+        <path d="M 15 30 L 45 0" />
+      </g>
+    </g>
+  </svg>
+</label>
+
+<nav class="main-navigation">
+    <ul>
+        <li><a target="_blank" href="index.html" data-text="Home">Home</a></li>
+        <li><a target="_blank" href="https://github.com/wmBolles" data-text="Coding">Github</a></li>
+        <li><a target="_blank" href="https://www.linkedin.com/in/wm-bolles/" data-text="Linkedin">Linkedin</a></li>
+        <li><a target="_blank" href="https://twitter.com/wassimbolles01" data-text="Contact">Twitter</a></li>
+      </ul>
+</nav>
+  </body>
+
+  <script type="text/javascript" src="./assets/vanilla.js"></script>
+	<script type="text/javascript">
+       		 VanillaTilt.init(document.querySelector(".card"), {
+               		 max: 10,
+               		 speed: 1000
+        		});
+    	</script>
+
+<style>
+   @import url("https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300&display=swap");
+
+   :root {
+  font-size: 20px;
+  box-sizing: inherit;
+}
+
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+p {
+  margin: 0;
+}
+
+p:not(:last-child) {
+  margin-bottom: 1.5em;
+}
+
+body {
+  font: 1em/1.618 Inter, sans-serif;
+  background-image: url("./assets/images/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 30px;
+  color: #224;
+}
+
+.card {
+  max-width: 300px;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  max-width: 500px;
+  height: 300px;
+  padding: 35px;
+
+  border: 1px solid rgba(255, 255, 255, .25);
+  border-radius: 20px;
+  background-color: rgba(41, 5, 5, 0);
+  box-shadow: 0 0 10px 1px rgba(47, 5, 5, 0.367);
+
+  backdrop-filter: blur(15px);
+}
+
+.card-footer {
+  font-size: 0.65em;
+  color: rgb(58, 58, 88);
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+
+}
+ul {
+  position: relative;
+}
+ul li {
+  list-style: none;
+  text-align: center;
+}
+ul li a {
+  color: #17d4bb;
+  text-decoration: none;
+
+  padding: 5px 20px;
+  display: inline-flex;
+  font-weight: 700;
+  transition: 0.5s;
+}
+ul:hover li a {
+  color: rgba(15, 248, 240, 0.824);
+}
+ul li:hover a {
+  color: #000;
+  background: transparent;
+}
+ul li a:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5em;
+  color: rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  z-index: -1;
+  opacity: 0;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 500px;
+  transition: letter-spacing 0.5s, left 0.5s;
+}
+ul li a:hover:before {
+  content: attr(data-text);
+  opacity: 1;
+  left: 50%;
+  letter-spacing: 10px;
+  width: 1800px;
+  height: 1800px;
+}
+ul li:nth-child(6n + 1) a:before {
+  background: #0470fe;
+}
+ul li:nth-child(6n + 2) a:before {
+  background: #ff7675;
+}
+ul li:nth-child(6n + 3) a:before {
+  background: #1582fe;
+}
+ul li:nth-child(6n + 4) a:before {
+  background: #a29bfe;
+}
+ul li:nth-child(6n + 5) a:before {
+  background: #fd79a8;
+}
+ul li:nth-child(6n + 6) a:before {
+  background: #ffeaa7;
+}
+
+
+</style>
+
+</html>
